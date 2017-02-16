@@ -13,9 +13,9 @@ import random,string
 
 def lenPass():
     try:
-        passleng = int(input("Define a length for our password (at least equal to four): "))
+        passleng = int(input("Define a length for your password (at least equal to four and not greater thant twenty): "))
     except Exception as e:
-        print("You should type a integer number")
+        print("You should type an integer number")
     if passleng < 4 or passleng > 20: # I choose four and ten, you can choose your own number
         print("You have to choose a number between 4 and 20")
     else:
